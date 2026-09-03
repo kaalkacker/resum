@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <meta name="description" content="A short description of your website.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caacupe+One&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-box {
+        margin: 60px;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Form {
+        /* border: 2px solid red ; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+    }
+
+    input {
+        font-size: 30px;
+        border: 1.5px solid rgb(48, 39, 39);
+        border-radius: 20px;
+        width: 165px;
+    }
+
+    textarea {
+        border: 3px solid rgb(16, 219, 192);
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 30px;
+
+    }
+
+    button {
+        margin: 30px;
+        padding: 20px 30px 20px 30px;
+        font-size: 30px;
+        background-color: black;
+        color: aqua;
+        border-radius: 20px;
+    }
+    button:hover {
+        margin: 30px;
+        padding: 20px 30px 20px 30px;
+        font-size: 30px;
+        background-color: rgb(60, 69, 124);
+        color: rgb(223, 18, 206);
+        border-radius: 20px;
+    }
+
+    #mainbox {
+        display: flex;
+        flex-direction: row;
+        /* right: 0px; */
+        /* border:2px solid red; */
+    }
+
+    h2 {
+        color: blueviolet;
+
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+
+    }
+
+    #sbox {
+        /* right: 30px; */
+        /* display: block; */
+        /* border: 2px solid red; */
+        /* float: right; */
+        /* float: right; */
+        margin-left: 15%;
+    }
+
+    #f {
+        height: 110px;
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid red; */
+        padding: 20px;
+
+    }
+
+    #f h1 {
+        /* justify-self: center; */
+        /* float:bottom; */
+        margin: 30px;
+    }
+
+    #img {
+        /* border: 2px solid red ; */
+        width: 100%;
+
+    }
+
+    #img img {
+        float: right;
+        height: 100px;
+        border: 2px solid black;
+        border-radius: 20px;
+
+    }
+
+    #con {
+        display: flex;
+        flex-direction: row;
+        padding: 6px;
+    }
+
+    .contect {
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        
+    }
+
+    .text {
+        font-size: 20px;
+
+
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(194, 92, 214);
+
+
+    }
+
+    #n {
+        /* border: 2px solid red; */
+        width: 70%;
+    }
+
+    #resume {
+        /* border: 2px solid red; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    /* @media (max-width: 768px) {
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .cards {
+            grid-template-columns:
+                repeat(2, 1fr);
+        }
+
+    } */
+
+    /* @media (max-width: 480px) {
+        #pdfContent{
+            width: 100%;
+        }
+
+    } */
+    header{
+        border: 2px solid rgb(52, 25, 151);
+        background-color: black;
+        opacity: 0.80;
+        height: 50px;
+        display: flex;
+        border-radius: 20px;
+    }
+    header li a{
+        color: rgb(0, 0, 0);
+        float: left;
+        /* border: 1px solid red; */
+        font-size: 20px;
+        border-radius: 20px;
+        text-decoration: none;
+
+    }
+    header li a:hover{
+        color: white;
+    }
+    header li{
+        float: left;
+        border: 1px solid black;
+        margin: 10px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        /* width: 30px; */
+        padding: 9px;
+        height:20px;
+        list-style-type: none;
+    }
+    header li:hover{
+        background-color: red;
+
+    }
+
+</style>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>welcome resume create app</h1>
+            <div class="form-box">
+                <!-- <h2>Simple Form</h2> -->
+
+                <form class="Form" onsubmit="return main()">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="phone" id="email">
+                    <label for="phone">phone number</label>
+                    <input type="phone" id="phone">
+                    <label for="location">location</label>
+                    <input type="location" id="location">
+                    <textarea id="summary" name="summary" rows="10" placeholder="Enter your summary..."></textarea>
+                    <textarea id="WORK_EXPERIENCE" name="WORK_EXPERIENCE" rows="10"
+                        placeholder="Enter your WORK EXPERIENCE..."></textarea>
+                    <textarea id="skills" name="skills" rows="10" placeholder="Enter your skills..."></textarea>
+                    <textarea id="achievements" name="achievements" rows="10"
+                        placeholder="Enter your achievements..."></textarea>
+                    <textarea id="cert_tern" name="cert_tern" rows="10"
+                        placeholder="Enter your CERTIFICATIONS AND TRAINING..."></textarea>
+                    <textarea id="education" name="education" rows="10"
+                        placeholder="Enter your EDUCATION..."></textarea>
+
+
+                    <button type="submit">Submit</button>
+                </form>
+                <label for="location">YOUR PASSPORT TYPE PHOTO</label>
+                <input type="file" id="photo" accept="image/*">
+                <!-- <button id="clear">Clear Image</button> -->
+
+            </div>
+        </section>
+
+        <section class="content">
+            <button onclick="savePDF()" id="savebtn" class="hero">Save as PDF</button>
+
+            <div class="page" id="pdfContent">
+
+                <div id="box">
+                    <div id="resume">
+                        <h1>RESUME</h1>
+                    </div>
+                    <div id="f">
+                        <h1 id="n">jayraj</h1>
+                        <div id="img">
+                            <img src="images.jpeg" alt="sorry" id="eimg">
+                        </div>
+                    </div>
+                    <div id="con">
+                        <p class="contect" id="eemail"> &#9993; admin42@gmail.com </p>
+                        <p class="contect" id="elocation"> &#128205; utter predesh pilibhit bithra</p>
+                        <p class="contect" id="ephone"> &#9742; 1234567890</p>
+
+                    </div>
+
+                    <hr>
+
+                    <h2> SUMMARY</h2>
+                    <p id="esummary" class="text">
+                        This HTML and CSS content will be rendered in the browser
+                        and saved as a PDF.
+                    </p>
+                </div>
+                <hr>
+                <div id="mainbox">
+                    <div>
+                        <h2> WORK EXPERIENCE</h2>
+                        <p id="WEX" class="text">
+                            This HTML and CSS content will be rendered in the browser
+                            and saved as a PDF.
+                        </p>
+
+                        <h2> ACHIEVEMENTS</h2>
+                        <p id="ACHIV" class="text">
+                            This HTML and CSS content will be rendered in the browser
+                            and saved as a PDF.
+                        </p>
+
+                        <h2>CERTIFICATIONS AND TRAINING </h2>
+                        <p id="ecert_tern" class="text">
+                            This HTML and CSS content will be rendered in the browser
+                            and saved as a PDF.
+                        </p>
+                    </div>
+                    <div id="sbox">
+                        <h2>SKILLS </h2>
+                        <p id="eskills" class="text">
+                            This HTML and CSS content will be rendered in the browser
+                            and saved as a PDF.
+                        </p>
+                        <h2>EDUCATION </h2>
+                        <p id="eeducation" class="text">
+                            This HTML and CSS content will be rendered in the browser
+                            and saved as a PDF.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p id="footer">&copy; 2026 My Website. All rights reserved to create resune </p>
+    </footer>
+
+
+    <!-- Load jQuery from Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Load your custom JavaScript file (jQuery is now available globally inside it) -->
+    <!-- <script src="js/script.js"></script> -->
+
+
+    <script>
+        const photoInput = document.getElementById("photo");
+        photoInput.addEventListener("change", () => {
+            const file = photoInput.files[0];
+
+            if (!file) return;
+
+            // Save the photo in browser storage
+            const reader = new FileReader();
+
+            reader.onload = () => {
+                localStorage.setItem("savedPhotos", reader.result);
+                alert("Photo saved!");
+            };
+
+            reader.readAsDataURL(file);
+        });
+
+        // document.getElementById("myForm").addEventListener("submit", function (event) {
+        //     event.preventDefault();
+
+        //     const name = document.getElementById("name").value;
+        //     const email = document.getElementById("email").value;
+        //     const phone = document.getElementById("phone").value;
+        //     const location = document.getElementById("location").value;
+        //     const summary = document.getElementById("summary").value;
+        //     const WORK_EXPERIENCE = document.getElementById("WORK_EXPERIENCE").value;
+        //     const skill = document.getElementById("skills").value;
+        //     const achiv = document.getElementById("achievements").value;
+        //     const cert_tern = document.getElementById("cert_tern").value;
+        //     const education = document.getElementById("education").value;
+        //     console.log(name,email,phone,location,summary,WORK_EXPERIENCE,skill,cert_tern,education)
+
+
+        //     // document.getElementById("result").innerHTML =
+        //     //     `Thank you, ${name}! Your email is ${email}.`;
+        //     document.getElementById("n").innerHTML = $(name);
+        //     document.getElementById("eemail").innerHTML = $(email);
+        //     document.getElementById("ephone").innerHTML = $(phone);
+        //     document.getElementById("elocation").innerHTML = $(location);
+        //     document.getElementById("esummary").innerHTML = $(summary);
+        //     document.getElementById("WEX").innerHTML = $(WORK_EXPERIENCE);
+        //     document.getElementById("ACHIV").innerHTML = $(achiv);
+        //     document.getElementById("ecert_tern").innerHTML = $(cert_tern);
+        //     document.getElementById("eskills").innerHTML = $(skill);
+        //     document.getElementById("eeducation").innerHTML = $(education);
+
+
+
+
+
+        // });
+
+        // })
+
+        function main() {
+            // const photoInput = document.getElementById("photo").value;
+
+
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const location = document.getElementById("location").value;
+            const summary = document.getElementById("summary").value;
+            const WORK_EXPERIENCE = document.getElementById("WORK_EXPERIENCE").value;
+            const skill = document.getElementById("skills").value;
+            const achiv = document.getElementById("achievements").value;
+            const cert_tern = document.getElementById("cert_tern").value;
+            const education = document.getElementById("education").value;
+
+
+            console.log(name);
+
+            // document.getElementById("result").innerHTML =
+            //     `Thank you, ${name}! Your email is ${email}.`;
+            document.getElementById("n").innerHTML = name;
+            document.getElementById("eemail").innerHTML = ` &#9993;${email}`;
+            document.getElementById("ephone").innerHTML = `&#9742; ${phone}`;
+            document.getElementById("elocation").innerHTML = `&#128205;${location}`;
+            document.getElementById("esummary").innerHTML = summary;
+            document.getElementById("WEX").innerHTML = WORK_EXPERIENCE;
+            document.getElementById("ACHIV").innerHTML = achiv;
+            document.getElementById("ecert_tern").innerHTML = cert_tern;
+            document.getElementById("eskills").innerHTML = skill;
+            document.getElementById("eeducation").innerHTML = education;
+
+            const image = localStorage.getItem("savedPhotos");
+
+            if (image) {
+                document.getElementById("eimg").src = image;
+            }
+            return false;
+        }
+        document.getElementById("clear").addEventListener("click", () => {
+            localStorage.removeItem("savedPhotos");
+            preview.removeAttribute("src");
+            input.value = "";
+        });
+
+        function savePDF() {
+            
+            document.getElementsByClassName("page")[0].style.margintop = '1000px'
+            document.getElementsByClassName("hero")[0].style.display = 'none';
+            document.getElementsByClassName("hero")[1].style.display = 'none';
+            document.getElementsByTagName("li")[0].style.display = 'none';
+            document.getElementsByTagName("header")[0].style.display = 'none';
+            // document.getElementById("savebtn").style.display = 'none';
+            document.getElementById("footer").style.display = 'none';
+
+            window.print();
+        }
+
+
+
+
+
+
+    </script>
+
+    </script>
+</body>
+
+</html>
